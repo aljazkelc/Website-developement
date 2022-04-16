@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}  /* default ponastavitev za browserje*/
+
+
+body{
+    margin: 0;
+    background-color:#b3b3b3;
+    font-family: 'Lucida Sans';
+    
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+header{
+    background:#8c8c8c;
+    margin-top: 0%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+   
+}
+
+header::after{
+    content:'' ;
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    width: 7%;
+    height: 7%;
+    padding: 10px 0;
+}
+
+nav{
+    float:right;
+}
+
+nav ul{
+    margin: 0;
+    padding-top:0%;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 100px;
+    padding-top: 45px;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 19px;
+}
+
+nav a:hover{
+    color:#cc0000;
+}
+
+nav a:before{
+    content:'' ;
+    display: block;
+    height: 8px;
+    background-color: #cc0000;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+    
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.footer{
+    position:fixed;
+    width: 100%;
+    bottom: 0%;
+    padding: 20px 0;
+    background-color: #8c8c8c;
+
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+
+
+}
+
